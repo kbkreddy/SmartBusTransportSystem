@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">mapinttest</string>
+    <string name="Search">SEARCH</string>
+    <string name="SearchBusNo">Dont Know Which Bus Takes You Home            Dont Worry You Can Search Here </string>
+    <string name="StartPoint">Starting Point</string>
+    <string name="DestinationPoint">Destination Point</string>
+    <string name="SearchBusNumbers">Search Bus Numbers</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

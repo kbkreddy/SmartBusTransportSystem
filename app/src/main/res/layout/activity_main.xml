@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.bharathkumar.bustrack.MainActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="37dp"
+            android:text="BUS NUMBER"
+
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/busNumberSearch"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/back"
+        android:layout_marginLeft="30sp"
+        android:textColor="#1A237E"
+        android:layout_width="100sp"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+
+        android:layout_height="25sp" />
+
+
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:hint="@string/Search"
+        android:onClick="mapstart"/>
+
+    <TextView
+        android:paddingTop="30sp"
+        android:paddingBottom="30sp"
+        android:paddingLeft="60sp"
+        android:paddingRight="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/SearchBusNo"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@drawable/back">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:paddingLeft="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/StartPoint"
+                android:layout_marginTop="15sp"
+                />
+            <TextView
+                android:paddingLeft="45dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/DestinationPoint"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:background="@drawable/back"
+                android:layout_weight="1"
+                android:textColor="#1A237E"
+                android:layout_margin="20sp"
+                android:layout_width="50sp"
+                android:textCursorDrawable="@color/colorPrimaryDark"
+                android:layout_height="25sp"/>
+            <EditText
+                android:layout_margin="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:textColor="#1A237E"
+                android:layout_width="50sp"
+                android:layout_height="25sp"
+                android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+
+
+        </LinearLayout>
+        <Button
+
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200sp"
+            android:layout_height="45sp"
+            android:hint="@string/SearchBusNumbers"/>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

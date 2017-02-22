@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_finalactivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.bharathkumar.bustrack.finalactivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="BUS NUMBER "
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="515    (Tambaram - Mahabalipuram)"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:text="No Of Seats Available"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Seats"
+            android:textStyle="bold"/>
+        />
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="12 Seats Avalable"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:text="Current Stop"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/PresentStop"
+            android:textStyle="bold"/>
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Kandigai" />
+            <TextView
+                android:paddingTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departed At 7:45 PM"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Next Stop"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/NextStop"
+            android:textStyle="bold"/>
+        />
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Melakottiur"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView
+            android:textStyle="bold"
+            android:text="Exected Arrival TO Ur Location or Nearest Bus Stop"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ETA" />
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:text="30 Mins"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET AN ALARAM"
+            android:textColor="#0091EA"
+            android:paddingTop="20sp"
+            android:onClick="setalarm"/>
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/clock1"/>
+    </LinearLayout>
+
+</LinearLayout>
